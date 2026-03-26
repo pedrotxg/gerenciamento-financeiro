@@ -1,0 +1,75 @@
+# Ambiente virtual
+venv/
+env/
+ENV/
+.venv/
+
+# Variáveis de ambiente
+.env
+.env.*
+*.env
+
+# Python
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Compilados / build
+*.so
+*.pyd
+*.dll
+
+# Distribuição / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testes / cobertura
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# Banco de dados
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos estáticos / mídia
+staticfiles/
+media/
+
+# Logs
+*.log
+
+# IDEs / editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Django
+*.pot
+*.mo
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Secrets
+secrets.json
+
+# CSVs / dados sensíveis
+*.csv
+*.xlsx
