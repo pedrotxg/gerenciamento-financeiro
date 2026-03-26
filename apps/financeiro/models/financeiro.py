@@ -45,6 +45,8 @@ class Transacoes(models.Model):
     valor = models.DecimalField(max_digits=10, decimal_places=2, help_text="Valor da transação")
     descricao = models.CharField(max_length=70, null=False, blank=False, help_text='Descrição da transação/estabelecimento/banco')
     id_externo = models.CharField(max_length=100, null=True, blank=True, help_text='Id de itentificação da transação (origem banco)')
+    total_parcelas = models.IntegerField(max_length=5, null=True, blank=True, help_text="Total de parcelas")
+    parcela_atual = models.IntegerField(max_length=5, null=True, blank=True, help_text="Parcela atual")
 
     fatura = models.ForeignKey(Faturas, on_delete=models.CASCADE) # apaga todos as transações se a fatura por apagada
     tipo = models.ForeignKey(TipoTransacao, on_delete=models.PROTECT) # bloqueia a exclusão se o tipo for apagado
