@@ -73,3 +73,4 @@ secrets.json
 # CSVs / dados sensíveis
 *.csv
 *.xlsx
+*.ofx
