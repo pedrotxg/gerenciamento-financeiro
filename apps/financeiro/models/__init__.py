@@ -1,0 +1,1 @@
+from apps.financeiro.models.financeiro import *
